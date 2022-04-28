@@ -25,7 +25,9 @@ fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${startTime}&end_date=${
 })
 .then(function(data){
     // console.log(data.near_earth_objects)
-   
+    
+
+    // obtain access to key/values of astroids within specified time, push to global variable
     Object.keys(data.near_earth_objects).forEach(function(key){
         // console.log(key)
         console.log(data.near_earth_objects[key])
@@ -37,10 +39,14 @@ fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${startTime}&end_date=${
 
         
         })
+    
+    // Threat Count
     currentThreats.innerText = threatName.length
 
     
     })
+
+    // Add each astroid name to list
     Object.values(threatName).forEach(function(v){
         const newItem = document.createElement('li')
         newItem.classList.add('aName')
