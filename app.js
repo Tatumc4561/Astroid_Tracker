@@ -13,10 +13,10 @@ stopTime = stopTime.toISOString().split('T')[0]
 const currentThreats = document.querySelector('.threatnum')
 const threatList = document.querySelector('.threatNames')
 
-let threatCount = []
+
 let threatName = []
 
-console.log(threatCount)
+
 console.log(threatName)
 
 fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${startTime}&end_date=${stopTime}&api_key=${API_key}`)
@@ -32,31 +32,22 @@ fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${startTime}&end_date=${
 
         Object.keys(data.near_earth_objects[key]).forEach(function(amount){
             // console.log(amount)
-            threatCount.push(amount)
             threatName.push(data.near_earth_objects[key][amount]['name'])
 
 
         
         })
-    currentThreats.innerText = threatCount.length
+    currentThreats.innerText = threatName.length
 
     
     })
-
+    Object.values(threatName).forEach(function(v){
+        const newItem = document.createElement('li')
+        newItem.classList.add('aName')
+        newItem.innerText = `${v}`
+    
+        threatList.appendChild(newItem)
+    })
 })
 
-// Object.keys(threatName).forEach(function(each){
-//     const newItem = document.createElement('li')
-//     newItem.classList.add('aName')
-//     newItem.innerText = `${each}`
 
-//     threatList.appendChild(newItem)
-// })
-
-Object.entries(threatName).forEach(function(k,v){
-    const newItem = document.createElement('li')
-    newItem.classList.add('aName')
-    newItem.innerText = `${v}`
-
-    threatList.appendChild(newItem)
-})
