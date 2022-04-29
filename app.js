@@ -1,4 +1,4 @@
-import API_key from './api.js';
+import publicAPI_key from './publicAPI.js';
 
 
 let startTime = new Date()
@@ -19,7 +19,7 @@ let threatName = []
 
 console.log(threatName)
 
-fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${startTime}&end_date=${stopTime}&api_key=${API_key}`)
+fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${startTime}&end_date=${stopTime}&api_key=${publicAPI_key}`)
 .then(function(response){
     return response.json()
 })
