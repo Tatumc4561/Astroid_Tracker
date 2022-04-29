@@ -1,3 +1,4 @@
+// import API_key from './api.js';
 import publicAPI_key from './publicAPI.js';
 
 
@@ -15,13 +16,18 @@ const threatList = document.querySelector('.threatNames')
 const threatdateList = document.querySelector('.threatDate')
 const threatsizeList = document.querySelector('.threatDiameter')
 const threatdistanceList = document.querySelector('.threatDistance')
+const threatvelocityList = document.querySelector('.threatVelocity')
+const threathazardList = document.querySelector('.threatHazard')
+
+
 
 
 let threatName = []
 let threatDate = []
 let threatSize = []
 let threatDistance = []
-
+let threatVelocity = []
+let threatHazard = []
 
 fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${startTime}&end_date=${stopTime}&api_key=${publicAPI_key}`)
 .then(function(response){
@@ -42,6 +48,9 @@ fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${startTime}&end_date=${
             threatDate.push(data.near_earth_objects[key][amount].close_approach_data[0].close_approach_date_full)
             threatSize.push(data.near_earth_objects[key][amount].estimated_diameter['kilometers'].estimated_diameter_max)
             threatDistance.push(data.near_earth_objects[key][amount].close_approach_data[0].miss_distance['kilometers'])
+            threatVelocity.push(data.near_earth_objects[key][amount].close_approach_data[0].relative_velocity['kilometers_per_hour'])
+            threatHazard.push(data.near_earth_objects[key][amount].is_potentially_hazardous_asteroid)
+
 
 
         
@@ -80,11 +89,29 @@ fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${startTime}&end_date=${
     })
 
     Object.values(threatDistance).forEach(function(v){
-
         const newDistance = document.createElement('li')
         newDistance.innerText = `${v}`
         threatdistanceList.appendChild(newDistance)
         
+    })
+
+    Object.values(threatVelocity).forEach(function(v){
+        const newVelocity = document.createElement('li')
+        newVelocity.innerText = `${v}`
+        threatvelocityList.appendChild(newVelocity)
+        
+    })
+
+    Object.values(threatHazard).forEach(function(v){
+        const newHazard = document.createElement('li')
+        if(v === false){
+        newHazard.innerText = 'No'
+        threathazardList.appendChild(newHazard)
+        }
+        else if(v === true){
+        newHazard.innerText = 'Yes'
+        threathazardList.appendChild(newHazard)
+        }
     })
 
 
