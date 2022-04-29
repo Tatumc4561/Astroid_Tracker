@@ -30,7 +30,9 @@ body {
     width: 50px;
 }
 
-
+#image2 {
+    transform: rotate(180deg);
+}
 
 .title {
     margin: 10px;
