@@ -12,12 +12,15 @@ stopTime = stopTime.toISOString().split('T')[0]
 
 const currentThreats = document.querySelector('.threatnum')
 const threatList = document.querySelector('.threatNames')
+const threatdateList = document.querySelector('.threatDate')
 
 
 let threatName = []
+let threatDate = []
 
 
 console.log(threatName)
+
 
 fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${startTime}&end_date=${stopTime}&api_key=${publicAPI_key}`)
 .then(function(response){
@@ -35,6 +38,7 @@ fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${startTime}&end_date=${
         Object.keys(data.near_earth_objects[key]).forEach(function(amount){
             // console.log(amount)
             threatName.push(data.near_earth_objects[key][amount]['name'])
+            threatDate.push(data.near_earth_objects[key][amount].close_approach_data[0].close_approach_date_full)
 
 
         
@@ -42,6 +46,8 @@ fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${startTime}&end_date=${
     
     // Threat Count
     currentThreats.innerText = threatName.length
+
+
 
     
     })
@@ -54,6 +60,17 @@ fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${startTime}&end_date=${
     
         threatList.appendChild(newItem)
     })
+
+    Object.values(threatDate).forEach(function(v){
+
+        const newDate = document.createElement('li')
+        newDate.innerText = `${v}`
+        threatdateList.appendChild(newDate)
+        
+    })
+
+
 })
+
 
 

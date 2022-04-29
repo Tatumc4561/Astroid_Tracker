@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(133, 133, 226);
+}
+
+.threatwrap {
+    display: flex;
+}
+
+.threatwrap h1 {
+    padding: 4px;
+}
+
+.table {
+   display: flex;
+
+}
+
+ol {
+    border-right: 2px solid black;
+    text-align: left;
+}
+
+li {
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+
+ul {
+    list-style: none;
+    text-align: center;
+}

@@ -8,16 +8,27 @@
     <title>Near Earth Impact</title>
     <script src="api.js" type="module"></script>
     <script defer src="app.js" type="module"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="currentThreats">
-        <h1>Threat Count</h1>
-        <h1 class="threatnum"></h1>
+        <h1>Astroid Tracker</h1>
+        <div class="threatwrap">
+            <h1 class="threatnum"></h1>
+            <h1>threats within the next 7 days.</h1>
+        </div>
     </div>
-    <ol class="threatNames">
+    <div class="table">
 
-    </ol>
+        <ol class="threatNames">
+            <h3>I.D.</h3>
+        </ol>
+
+        <ul class="threatDate">
+            <h3>Close Approach Date</h3>
+        </ul>
+    </div>
 </body>
 
 </html>
