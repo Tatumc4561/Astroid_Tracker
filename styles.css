@@ -1,13 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap');
+
+* {
+    font-family: 'Bebas Neue', cursive;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
 body {
     background-color: rgb(133, 133, 226);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.currentThreats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.title-wrap {
+    display: flex;
+}
+
+.title-wrap img {
+    height: 50px;
+    width: 50px;
+}
+
+
+
+.title {
+    margin: 10px;
 }
 
 .threatwrap {
     display: flex;
+    border-bottom: 2px solid black;
 }
 
 .threatwrap h1 {
-    padding: 4px;
+    padding: 0 4px;
+    margin: 0;
 }
 
 .table {
@@ -22,6 +58,7 @@ ol {
 
 h3 {
     border-bottom: 5px solid black;
+    font-weight: 100;
 }
 
 li {
