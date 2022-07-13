@@ -1,60 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="photos/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="photos/favicon.ico" type="image/x-icon" />
     <title>Near Earth Impact</title>
-    <script src="api.js" type="module"></script>
     <script defer src="app.js" type="module"></script>
-    <link rel="stylesheet" href="styles.css">
-</head>
 
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
     <div class="currentThreats">
-        <div class="title-wrap">
-            <img src="photos/asteroid.png" alt="" srcset="">
-            <h1 class="title">Asteroid Tracker</h1>
-            <img src="photos/asteroid.png" alt="" srcset="" id="image2">
-        </div>
-        <div class="threatwrap">
-            <h1 class="threatnum"></h1>
-            <h1>threats within the next 7 days.</h1>
-        </div>
+      <div class="title-wrap">
+        <img src="photos/asteroid.png" alt="" srcset="" />
+        <h1 class="title">Asteroid Tracker</h1>
+        <img src="photos/asteroid.png" alt="" srcset="" id="image2" />
+      </div>
+      <div class="threatwrap">
+        <h1 class="threatnum"></h1>
+        <h1>threats within the next 7 days.</h1>
+      </div>
     </div>
     <div class="table">
+      <ol class="threatNames">
+        <h3>I.D.</h3>
+      </ol>
 
-        <ol class="threatNames">
-            <h3>I.D.</h3>
-        </ol>
+      <ul class="threatDate">
+        <h3>Approach Date</h3>
+      </ul>
 
-        <ul class="threatDate">
-            <h3>Approach Date</h3>
-        </ul>
+      <ul class="threatDiameter">
+        <h3>Diameter(km)</h3>
+      </ul>
 
-        <ul class="threatDiameter">
-            <h3>Diameter(km)</h3>
-        </ul>
+      <ul class="threatDistance">
+        <h3>Distance(km)</h3>
+      </ul>
 
-        <ul class="threatDistance">
-            <h3>Distance(km)</h3>
-        </ul>
+      <ul class="threatVelocity">
+        <h3>Velocity(kph)</h3>
+      </ul>
 
-        <ul class="threatVelocity">
-            <h3>Velocity(kph)</h3>
-        </ul>
-
-        <ul class="threatHazard">
-            <h3>Potential Hazard?</h3>
-        </ul>
-
+      <ul class="threatHazard">
+        <h3>Potential Hazard?</h3>
+      </ul>
     </div>
     <footer>
-        <a href="https://www.flaticon.com/free-icons/asteroid" title="Asteroid icons">Asteroid icons created by Nikita
-            Golubev - Flaticon</a>
+      <a
+        href="https://www.flaticon.com/free-icons/asteroid"
+        title="Asteroid icons"
+        >Asteroid icons created by Nikita Golubev - Flaticon</a
+      >
     </footer>
-</body>
-
+  </body>
 </html>
