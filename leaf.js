@@ -1,14 +1,14 @@
-import usaStateBoundaries from "./USAstateBoundaries.js";
+import usaStateBoundaries from "./USAstateBoundaries.js"
 
 // initial load point ----------------
-var map = L.map("map").setView([36, -103], 4);
+var map = L.map("map").setView([36, -103], 4)
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
   attribution: "© OpenStreetMap",
-}).addTo(map);
+}).addTo(map)
 
-// blip marker ------------------------
-// var marker = L.marker([36, -103]).addTo(map);
+// blip marker  Lake Plataeu ------------------------
+var marker = L.marker([45.30793106658124, -110.1210281567377]).addTo(map)
 
 // // circle -----------------------------
 // var circle = L.circle([51.508, -0.11], {
@@ -18,8 +18,33 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 //   radius: 500,
 // }).addTo(map);
 
-var geojsonLayer = L.geoJSON(usaStateBoundaries);
-geojsonLayer.addTo(map);
+// state boundaries
+var geojsonLayer = L.geoJSON(usaStateBoundaries)
+geojsonLayer.addTo(map)
+
+// idk?  random geo info
+// convert kml to geoJSON
+var runLayer = omnivore.kml("geoarea.kml").on("ready", function () {
+  map.fitBounds(runLayer.getBounds())
+
+  runLayer.eachLayer(function (layer) {
+    layer.bindPopup(layer.feature.properties.description)
+  })
+})
+runLayer.addTo(map)
+
+// recommended areas
+// convert kml to geoJSON
+var forestBoundary = omnivore
+  .kml("AdministrativeForestBoundary.kml")
+  .on("ready", function () {
+    map.fitBounds(forestBoundary.getBounds())
+
+    forestBoundary.eachLayer(function (layer2) {
+      layer2.bindPopup(layer2.feature.properties.description)
+    })
+  })
+forestBoundary.addTo(map)
 
 // polygon ----------------------------
 
@@ -40,14 +65,15 @@ geojsonLayer.addTo(map);
 //   .setContent("I am a standalone popup.")
 //   .openOn(map);
 
-// var popup = L.popup();
+var popup = L.popup()
 
 // popups for areas outside of designated areas
-// function onMapClick(e) {
-//   popup
-//     .setLatLng(e.latlng)
-//     .setContent("You clicked the map at " + e.latlng.toString())
-//     .openOn(map);
-// }
+function onMapClick(e) {
+  console.log(e.target)
+  popup
+    .setLatLng(e.latlng)
+    .setContent("You clicked the map at " + e.latlng.toString())
+    .openOn(map)
+}
 
-// map.on("click", onMapClick);
+map.on("click", onMapClick)
