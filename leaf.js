@@ -6,14 +6,14 @@ import risk2050 from "./reef2050.js"
 import threat2011 from "./reef2011threat.js"
 
 // initial load point ----------------
-var map = L.map("map").setView([36, -103], 4)
+var map = L.map("map").setView([21.5, -71.6], 9)
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
   attribution: "© OpenStreetMap",
 }).addTo(map)
 
 // blip marker  Lake Plataeu ------------------------
-var marker = L.marker([-71.242033, 21.202188]).addTo(map)
+// var marker = L.marker([-71.242033, 21.202188]).addTo(map)
 
 // // circle -----------------------------
 // var circle = L.circle([51.508, -0.11], {
@@ -49,39 +49,39 @@ reefsthreat2011.addTo(map)
 
 // idk?  random geo info
 // convert kml to geoJSON
-var runLayer = omnivore.kml("geoarea.kml").on("ready", function () {
-  map.fitBounds(runLayer.getBounds())
+// var runLayer = omnivore.kml("geoarea.kml").on("ready", function () {
+//   map.fitBounds(runLayer.getBounds())
 
-  runLayer.eachLayer(function (layer) {
-    layer.bindPopup(layer.feature.properties.description)
-  })
-})
-runLayer.addTo(map)
+//   runLayer.eachLayer(function (layer) {
+//     layer.bindPopup(layer.feature.properties.description)
+//   })
+// })
+// runLayer.addTo(map)
 
 // recommended areas
 // convert kml to geoJSON
-var forestBoundary = omnivore
-  .kml("AdministrativeForestBoundary.kml")
-  .on("ready", function () {
-    map.fitBounds(forestBoundary.getBounds())
+// var forestBoundary = omnivore
+//   .kml("AdministrativeForestBoundary.kml")
+//   .on("ready", function () {
+//     map.fitBounds(forestBoundary.getBounds())
 
-    forestBoundary.eachLayer(function (layer2) {
-      layer2.bindPopup(layer2.feature.properties.description)
-    })
-  })
-forestBoundary.addTo(map)
+//     forestBoundary.eachLayer(function (layer2) {
+//       layer2.bindPopup(layer2.feature.properties.description)
+//     })
+//   })
+// forestBoundary.addTo(map)
 
 // climate change
-var climateChange = omnivore
-  .kml("climate_change2.kml")
-  .on("ready", function () {
-    map.fitBounds(climateChange.getBounds())
+// var climateChange = omnivore
+//   .kml("climate_change2.kml")
+//   .on("ready", function () {
+//     map.fitBounds(climateChange.getBounds())
 
-    climateChange.eachLayer(function (layer3) {
-      layer3.bindPopup(layer3.feature.properties.description)
-    })
-  })
-climateChange.addto(map)
+//     climateChange.eachLayer(function (layer3) {
+//       layer3.bindPopup(layer3.feature.properties.description)
+//     })
+//   })
+// climateChange.addto(map)
 // polygon ----------------------------
 
 // var polygon = L.polygon([
