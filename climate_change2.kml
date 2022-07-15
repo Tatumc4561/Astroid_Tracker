@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Folder><name>NSIDC_SepSeaIceExtent</name>
+</Folder>
+<Folder><name>September_1979_2021</name>
+  <Placemark>
+	<name>Median Extent</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#September_1979_2021">
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Arctic Sea Ice Extent</name>
+	<ExtendedData><SchemaData schemaUrl="#September_1979_2021">
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="snippet">	</SimpleData>
+		<SimpleData name="Field_1">../n_201209_extn_closeup.png</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>146,70</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Antarctic Sea Ice Extent</name>
+	<ExtendedData><SchemaData schemaUrl="#September_1979_2021">
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="snippet">	</SimpleData>
+		<SimpleData name="See Also"></SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>55,-70</coordinates></Point>
+  </Placemark>
+</Folder>
+<Folder><name>Data</name>
+  <Placemark>
+	<name>197909 </name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1979/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1980/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>198009</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1980/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1981/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>198109</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1981/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1982/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>198209</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1982/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1983/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>198309</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1983/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1984/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>198409</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1984/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1985/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>198509</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1985/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1986/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>198609</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1986/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1987/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>198709</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1987/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1988/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>198809</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1988/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1989/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>198909</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1989/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1990/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>199009</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1990/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1991/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>199109</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1991/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1992/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>199209</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1992/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1993/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>199309</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1993/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1994/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>199409</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1994/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1995/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>199509</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1995/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1996/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>199609</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1996/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1997/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>199709</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1997/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1998/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>199809</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1998/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">1999/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>199909</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">1999/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2000/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>200009</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2000/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2001/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>200109</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2001/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2002/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>200209</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2002/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2003/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>200309</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2003/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2004/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>200409</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2004/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2005/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>200509</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2005/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2006/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>200609</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2006/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2007/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>200709</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2007/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2008/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>200809</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2008/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2009/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>200909</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2009/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2010/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>201009</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2010/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2011/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>201109</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2011/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2012/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>201209</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2012/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2013/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>201309</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2013/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2014/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>201409</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2014/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2015/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>201509</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2015/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2016/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>201609</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2016/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2017/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>201709</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2017/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2018/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>201809</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2018/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2019/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>201909</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2019/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2020/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>202009</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2020/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2021/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>202109</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Data">
+		<SimpleData name="begin">2021/01/01 00:00:00</SimpleData>
+		<SimpleData name="end">2022/01/01 00:00:00</SimpleData>
+		<SimpleData name="visibility">1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>180,90 180,-90 -180,-90 -180,90 180,90</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+<Folder><name>Date</name>
+</Folder>
+<Schema name="September_1979_2021" id="September_1979_2021">
+	<SimpleField name="visibility" type="int"></SimpleField>
+	<SimpleField name="snippet" type="string"></SimpleField>
+	<SimpleField name="Field_1" type="string"></SimpleField>
+	<SimpleField name="See Also" type="string"></SimpleField>
+</Schema>
+<Schema name="Data" id="Data">
+	<SimpleField name="begin" type="string"></SimpleField>
+	<SimpleField name="end" type="string"></SimpleField>
+	<SimpleField name="visibility" type="int"></SimpleField>
+</Schema>
+</Document></kml>

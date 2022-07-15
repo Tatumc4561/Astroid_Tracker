@@ -1,4 +1,9 @@
 import usaStateBoundaries from "./USAstateBoundaries.js"
+import recreationSites from "./recsites.js"
+import nonMotor from "./Nonmotorized_Trails.js"
+import risk2030 from "./reef2030.js"
+import risk2050 from "./reef2050.js"
+import threat2011 from "./reef2011threat.js"
 
 // initial load point ----------------
 var map = L.map("map").setView([36, -103], 4)
@@ -8,7 +13,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map)
 
 // blip marker  Lake Plataeu ------------------------
-var marker = L.marker([45.30793106658124, -110.1210281567377]).addTo(map)
+var marker = L.marker([-71.242033, 21.202188]).addTo(map)
 
 // // circle -----------------------------
 // var circle = L.circle([51.508, -0.11], {
@@ -19,8 +24,28 @@ var marker = L.marker([45.30793106658124, -110.1210281567377]).addTo(map)
 // }).addTo(map);
 
 // state boundaries
-var geojsonLayer = L.geoJSON(usaStateBoundaries)
-geojsonLayer.addTo(map)
+// var geojsonLayer = L.geoJSON(usaStateBoundaries)
+// geojsonLayer.addTo(map)
+
+// recreation sites
+// var recSites = L.geoJSON(recreationSites)
+// recSites.addTo(map)
+
+// non motorized trails
+// var nonMotorized = L.geoJSON(nonMotor)
+// nonMotorized.addTo(map)
+
+// reefs at risk 2030
+var reefRisk2030 = L.geoJSON(risk2030)
+reefRisk2030.addTo(map)
+
+// reefs at risk 2050
+var reefRisk2050 = L.geoJSON(risk2050)
+reefRisk2050.addTo(map)
+
+// reefs 2011 threat
+var reefsthreat2011 = L.geoJSON(threat2011)
+reefsthreat2011.addTo(map)
 
 // idk?  random geo info
 // convert kml to geoJSON
@@ -46,6 +71,17 @@ var forestBoundary = omnivore
   })
 forestBoundary.addTo(map)
 
+// climate change
+var climateChange = omnivore
+  .kml("climate_change2.kml")
+  .on("ready", function () {
+    map.fitBounds(climateChange.getBounds())
+
+    climateChange.eachLayer(function (layer3) {
+      layer3.bindPopup(layer3.feature.properties.description)
+    })
+  })
+climateChange.addto(map)
 // polygon ----------------------------
 
 // var polygon = L.polygon([
