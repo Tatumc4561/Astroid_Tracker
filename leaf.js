@@ -35,17 +35,40 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 // var nonMotorized = L.geoJSON(nonMotor)
 // nonMotorized.addTo(map)
 
-// reefs at risk 2030
-var reefRisk2030 = L.geoJSON(risk2030)
-reefRisk2030.addTo(map)
+// style for 2030
+var myStyle2030 = {
+  color: "#041014",
+  weight: 1,
+  opacity: 1,
+}
+
+// style for 2015
+var myStyle2015 = {
+  color: "#be4d25",
+  weight: 2,
+  opacity: 1,
+}
+
+// style for 2011
+var myStyle2011 = {
+  color: "#be2596",
+  weight: 3,
+  opacity: 1,
+}
+
+var reefRisk2030 = L.geoJSON(risk2030, {
+  style: myStyle2030,
+}).addTo(map)
 
 // reefs at risk 2050
-var reefRisk2050 = L.geoJSON(risk2050)
-reefRisk2050.addTo(map)
+var reefRisk2050 = L.geoJSON(risk2050, {
+  style: myStyle2015,
+}).addTo(map)
 
 // reefs 2011 threat
-var reefsthreat2011 = L.geoJSON(threat2011)
-reefsthreat2011.addTo(map)
+var reefsthreat2011 = L.geoJSON(threat2011, {
+  style: myStyle2011,
+}).addTo(map)
 
 // idk?  random geo info
 // convert kml to geoJSON
