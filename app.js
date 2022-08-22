@@ -128,7 +128,7 @@ fetch(
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
     // Scale
-    var scale = d3.scaleLinear().domain([0, 10000000]).range([0, width])
+    var scale = d3.scaleSequential().domain([0, 10000000]).range([0, width])
 
     // Axis
     var axis = d3.axisTop().scale(scale)
@@ -137,6 +137,7 @@ fetch(
 
     // Gridline
     var gridlines = d3.axisTop().tickFormat("").tickSize(-height).scale(scale)
+    console.log(gridlines)
 
     svg.append("g").attr("class", "grid").call(gridlines)
 
