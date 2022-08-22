@@ -1,75 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap");
 
 * {
-    font-family: 'Bebas Neue', cursive;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Bebas Neue", cursive;
+  -webkit-font-smoothing: antialiased;
 }
 
-
-
 body {
-    background-color: rgb(133, 133, 226);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: rgb(133, 133, 226);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .currentThreats {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
 .title-wrap {
-    display: flex;
+  display: flex;
 }
 
 .title-wrap img {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 #image2 {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .title {
-    margin: 10px;
+  margin: 10px;
 }
 
 .threatwrap {
-    display: flex;
-    border-bottom: 2px solid black;
+  display: flex;
+  border-bottom: 2px solid black;
 }
 
 .threatwrap h1 {
-    padding: 0 4px;
-    margin: 0;
+  padding: 0 4px;
+  margin: 0;
 }
 
 .table {
-   display: flex;
-
+  display: flex;
 }
 
 ol {
-    border-right: 2px solid black;
-    text-align: left;
+  border-right: 2px solid black;
+  text-align: left;
 }
 
 h3 {
-    border-bottom: 5px solid black;
-    font-weight: 100;
+  border-bottom: 5px solid black;
+  font-weight: 100;
 }
 
 li {
-    border-bottom: 1px solid black;
-    padding: 5px;
+  border-bottom: 1px solid black;
+  padding: 5px;
 }
 
-
 ul {
-    list-style: none;
-    text-align: center;
+  list-style: none;
+  text-align: center;
+}
+
+/* d3 */
+
+.grid line {
+  stroke: rgb(154, 93, 93);
 }
