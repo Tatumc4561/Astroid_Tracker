@@ -134,7 +134,10 @@ fetch(
     var scale = d3.scaleSequential().domain([0, 10000000]).range([0, width])
 
     // Axis
-    var axis = d3.axisTop().scale(scale)
+    var axis = d3.axisTop().scale(scale).tickFormat(function(d) {
+    // Format number to display as '1M' instead of '1,000,000'
+       return d3.format(".1s")(d).replace("mil");
+    });
 
     svg.append("g").call(axis)
 
