@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap");
-
 * {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Courier New";
   -webkit-font-smoothing: antialiased;
+  font-size: 12px;
 }
 
 body {
@@ -27,6 +26,10 @@ body {
   width: 50px;
 }
 
+.title-wrap h1 {
+  font-size: 32px;
+}
+
 #image2 {
   transform: rotate(180deg);
 }
@@ -43,6 +46,7 @@ body {
 .threatwrap h1 {
   padding: 0 4px;
   margin: 0;
+  font-size: 24px;
 }
 
 .table {
@@ -52,6 +56,11 @@ body {
 ol {
   border-right: 2px solid black;
   text-align: left;
+}
+
+h1 {
+  font-size:24px;
+  border-bottom: 2px solid black;
 }
 
 h3 {
@@ -74,3 +83,30 @@ ul {
 .grid line {
   stroke: rgb(154, 93, 93);
 }
+
+/* Center the contents (image and caption) inside the container */
+.image-container {
+  display: flex;
+  flex-direction: column;  /* Stack the image and caption vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center;     /* Center horizontally */
+  width: 100%;             /* Make the container take up full width */
+  padding: 10px;           /* Optional: Add some space inside the container */
+  text-align: center;      /* Optional: Center the caption text */
+  margin: 0 auto;          /* Optional: Center the container itself if it has a width */
+}
+
+.image-container p {
+  display: flex;
+  flex-direction: column;  /* Stack the image and caption vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center;     /* Center horizontally */
+  width: 50%;             /* Make the container take up full width */
+  padding: 10px;           /* Optional: Add some space inside the container */
+  text-align: center;      /* Optional: Center the caption text */
+  margin: 0 auto;          /* Optional: Center the container itself if it has a width */
+}
+
+
+
+

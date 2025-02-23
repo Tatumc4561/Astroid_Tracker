@@ -158,68 +158,47 @@ fetch(
       .attr("fill", "blue")
   });
 
-fetch(
-//  `https://api.nasa.gov/neo/rest/v1/54509621?&api_key=${publicAPI_key}`
-//  `https://api.nasa.gov/neo/rest/v1/54516265?&api_key=${publicAPI_key}`
-  `https://api.nasa.gov/neo/rest/v1/feed?start_date=${startTime}&end_date=${stopTime}&api_key=${publicAPI_key}`
-)
+// Target the HTML element where the image will be displayed
+const imageContainer = document.querySelector(".image-container");
+
+// API endpoint for NASA's Astronomy Picture of the Day (APOD)
+const apodURL = `https://api.nasa.gov/planetary/apod?api_key=${publicAPI_key}`;
+
+fetch(apodURL)
   .then(function (response) {
     return response.json();
   })
   .then(function (data) {
     console.log(data);
+    
+    // Check if there's an image URL in the response (APOD will return an image_url)
+    if (data.url) {
+      // Create an image element
+      const imgElement = document.createElement("img");
+      imgElement.src = data.url;
+      imgElement.alt = data.title; // Adding the title as the alt text
+      imgElement.classList.add("apod-image"); // Optional: Add a class for styling
 
-    // Iterate over all the dates and the asteroids associated with each date
-    Object.keys(data.near_earth_objects).forEach(function (date) {
-      // Iterate over each asteroid for that particular date
-      data.near_earth_objects[date].forEach(function (asteroid) {
-        const isHazardous = asteroid.is_potentially_hazardous_asteroid;
+      imgElement.onload = function() {
+        // Resize the image when it has loaded
+        imgElement.style.width = "50%";  // Resize to 50% of the container's width
+        imgElement.style.height = "auto";  // Maintain aspect ratio
+        imgElement.style.maxWidth = "600px"; // Optional: Limit max width
+        imgElement.style.objectFit = "contain"; // Ensure the image fits within the container
 
-        // Only push data for hazardous asteroids (isHazardous === true)
-        if (isHazardous) {
-          threatName2.push(asteroid.name);
-          threatDate2.push(asteroid.close_approach_data[0].close_approach_date_full);
-          threatSize2.push(asteroid.estimated_diameter.kilometers.estimated_diameter_max);
-          threatDistance2.push(asteroid.close_approach_data[0].miss_distance.kilometers);
-          threatVelocity2.push(asteroid.close_approach_data[0].relative_velocity.kilometers_per_hour);
-          threatHazard2.push(isHazardous);
-        }
-      });
-    });
+        // Optionally, log the image dimensions after loading
+        console.log('Image loaded with dimensions:', imgElement.width, imgElement.height);
+      };
 
+      // Append the image to the container
+      imageContainer.appendChild(imgElement);
 
-    // Update Threat Count
-    currentThreats2.innerText = threatName2.length;
-
-    // Add each asteroid name to the list, now only including hazardous ones
-    threatName2.forEach(function (v, index) {
-      const newItem2 = document.createElement("li");
-      newItem2.classList.add("aName");
-      newItem2.innerText = `${v}`;
-      threatList2.appendChild(newItem2);
-
-      const newDate2 = document.createElement("li");
-      newDate2.innerText = `${threatDate2[index]}`;
-      threatdateList2.appendChild(newDate2);
-
-      const newSize2 = document.createElement("li");
-      newSize2.innerText = `${threatSize2[index]}`;
-      threatsizeList2.appendChild(newSize2);
-
-      const newDistance2 = document.createElement("li");
-      newDistance2.innerText = `${threatDistance2[index]}`;
-      threatdistanceList2.appendChild(newDistance2);
-
-      const newVelocity2 = document.createElement("li");
-      newVelocity2.innerText = `${threatVelocity2[index]}`;
-      threatvelocityList2.appendChild(newVelocity2);
-
-      const newHazard2 = document.createElement("li");
-      newHazard2.innerText = "Yes"; // Since the asteroid is hazardous
-      threathazardList2.appendChild(newHazard2)
-   });
+      // Optionally, add a caption for the image
+      const caption = document.createElement("p");
+      caption.innerText = data.explanation; // Explanation of the image
+      imageContainer.appendChild(caption);
+    }
   })
   .catch(function (error) {
     console.log('Error fetching data:', error);
-  }
-);
+  });
